@@ -1,4 +1,4 @@
-let string = "agro meter datascaner declaration";
+let string = "agro hi";
 let words = string.split(" ");
 let count = words.length;
 let longestWord = words[0].length;
