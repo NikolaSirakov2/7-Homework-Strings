@@ -1,7 +1,7 @@
-let word1 = "кисел";
-let word2 = "остър";
+let word1 = "машина";
+let word2 = "шапка";
 
-let vertical = "";
+let vertical = '';
 
 for (let i = 0; i < word2.length; i++) {
   if (word1.includes(word2[i])) {
@@ -16,4 +16,8 @@ for (let i = 0; i < word2.length; i++) {
   }
 }
 
-console.log(vertical);
+if (vertical === '') {
+  console.log("Редиците нямат общ знак!");
+} else {
+  console.log(vertical);
+}
