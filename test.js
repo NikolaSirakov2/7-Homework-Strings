@@ -14,3 +14,12 @@ function swap(arr){
 swap(arr);
 
 console.log(arr);
+
+let n = 4;
+let arra = [];
+
+for(let col = 0; col < n; col++){
+    arra.push(new Array(55));
+}
+
+console.log(arra[2]);
