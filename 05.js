@@ -1,16 +1,23 @@
-let word1 = "кораб";
-let word2 = "хърду";
+let word1 = "носач";
+let word2 = "черта";
 
-function cross(vert, horizon){
-    var string = "";
-        for(let k = 0; k < vert.length; k++) {
-            if(horizon.charAt(0) === vert.charAt(k)) {
-                string += horizon + "\n";
-            } else {
-                string += vert.charAt(k) + "\n"
-            }
-        }
-    return string;
+let vertical = '';
+
+for (let i = 0; i < word2.length; i++) {
+  if (word1.includes(word2[i])) {
+    for (let k = 0; k < word1.length; k++) {
+      if (word1[k] === word2[i]) {
+        vertical += word2 + "\n";
+      } else {
+        vertical += word1[k] + "\n";
+      }
+    }
+    break;
+  }
 }
 
-console.log(cross(word1, word2));
+if (vertical === '') {
+  console.log("Редиците нямат общ знак!");
+} else {
+  console.log(vertical);
+}
