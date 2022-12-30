@@ -1,5 +1,5 @@
-let word1 = "машина";
-let word2 = "шапка";
+let word1 = "носач";
+let word2 = "черта";
 
 let vertical = '';
 
